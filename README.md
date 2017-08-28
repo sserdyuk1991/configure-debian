@@ -7,7 +7,7 @@ Set of scripts for configuring of clear Debian installation
 1. Log into superuser account and run 'configure-sudo.sh' script 
 
     su
-    ./configure-sudo.sh
+    ./configure-sudo.sh <username>
 
 2. Log out and run 'configure.sh' as usual user
 

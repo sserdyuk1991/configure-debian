@@ -3,10 +3,10 @@
 PREFIX_DIR="software-installation-scripts"
 
 # Install core packages
-sudo apt-get -y install build-essential gdb vim tree incron git meld firefox dos2unix ranger trash-cli htop keepass2 mono-complete libglu1-mesa-dev pdftk rxvt-unicode scrot gimp zathura openvpn xz-utils jmtpfs zip unzip xinput
+sudo apt-get -y install build-essential gdb vim tree incron git meld git-cola dos2unix ranger trash-cli htop keepass2 mono-complete libglu1-mesa-dev pdftk rxvt-unicode scrot gimp zathura openvpn xz-utils jmtpfs zip unzip xinput qbittorrent firefox-esr pcmanfm-qt network-manager network-manager-gnome
 
 # Install additional packages
-sudo apt-get -y install git-cola qbittorrent clementine virtualbox-5.1
+sudo apt-get -y install clementine virtualbox-5.1
 
 # Install Awesome WM
 $PREFIX_DIR/install-awesome.sh
