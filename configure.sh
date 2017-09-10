@@ -17,7 +17,7 @@ sudo apt-get update && sudo apt-get -y upgrade
 ./install-software.sh
 
 # Restore backup files
-../debian-backup-files/backup-files/$HOME/.bin/restore.sh -s "$SRC_DIR"
+../debian-backup-files/backup-files/$HOME/.bin/restore-all.sh -s "$SRC_DIR"
 
 # Reboot when configuring is complete
 sudo reboot
