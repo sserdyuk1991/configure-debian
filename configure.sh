@@ -11,7 +11,7 @@ SRC_DIR="$HOME/tmp"
 ./add-keys.sh
 
 # Make system up-to-date
-sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get update && sudo apt-get -y -t *-backports upgrade
 
 # Install necessary software
 ./install-software.sh
