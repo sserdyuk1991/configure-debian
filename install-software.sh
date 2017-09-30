@@ -22,6 +22,3 @@ $PREFIX_DIR/install-skype.sh
 
 # Install Slack
 $PREFIX_DIR/install-slack.sh
-
-# Install TeamViewer
-#$PREFIX_DIR/install-teamviewer.sh
