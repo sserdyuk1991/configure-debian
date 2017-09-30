@@ -2,6 +2,7 @@
 
 set -e
 
-wget -O /tmp/slack.deb https://downloads.slack-edge.com/linux_releases/slack-desktop-2.1.2-amd64.deb
-sudo dpkg -i /tmp/slack.deb
-sudo apt-get -fy install
+PKG=/tmp/slack.deb
+
+wget -O $PKG https://downloads.slack-edge.com/linux_releases/slack-desktop-2.8.1-amd64.deb
+sudo dpkg -i $PKG || sudo apt-get -fy install
