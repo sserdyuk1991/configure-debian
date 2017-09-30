@@ -14,9 +14,6 @@ sudo update-alternatives --set editor /usr/bin/vim.basic
 # Install Awesome WM
 $PREFIX_DIR/install-awesome.sh
 
-# Install Dropbox
-$PREFIX_DIR/install-dropbox.sh
-
 # Install Skype
 $PREFIX_DIR/install-skype.sh
 
