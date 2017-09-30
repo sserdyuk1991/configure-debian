@@ -16,3 +16,6 @@ $PREFIX_DIR/install-skype.sh
 
 # Install Slack
 $PREFIX_DIR/install-slack.sh
+
+# Install Viber
+$PREFIX_DIR/install-viber.sh
