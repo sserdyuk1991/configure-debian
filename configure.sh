@@ -11,7 +11,7 @@ install-drivers/install-drivers.sh
 sudo apt-get update && sudo apt-get -y upgrade
 
 # Install necessary software
-./install-software.sh
+install-software/install-software.sh
 
 # Restore backup files
 ../debian-backup-files/backup-files$HOME/.bin/restore-all.sh -s "$SRC_DIR"
