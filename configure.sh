@@ -5,7 +5,7 @@ set -e
 SRC_DIR="$(dirname "$0")/.."
 
 # Install necessary drivers
-./install-drivers.sh
+install-drivers/install-drivers.sh
 
 # Make system up-to-date
 sudo apt-get update && sudo apt-get -y upgrade
