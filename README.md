@@ -4,14 +4,23 @@ Set of scripts for configuring of clear Debian installation
 
 ## Configuration steps
 
-1. Log into superuser account and run 'configure-sudo.sh' script 
+0. In order to configure WiFi on the fresh installed system you need to run the following command on the already configured one:
+
+    ```bash
+    cd configure-wifi/ && ./prepare.sh
+    ```
+
+    The next steps should be performed on the target system.
+
+1. Run the following two scripts as superuser:
 
     ```bash
     su
+    cd configure-wifi/ && ./configure-wifi.sh && cd ..
     ./configure-sudo.sh <username>
     ```
 
-2. After reboot run 'configure.sh' as usual user
+2. After reboot run 'configure.sh' as normal user:
 
     ```bash
     ./configure.sh

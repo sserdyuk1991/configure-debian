@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get -y install firmware-iwlwifi firmware-intel-sound
+sudo apt-get -y install firmware-intel-sound
