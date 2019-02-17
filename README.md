@@ -1,8 +1,8 @@
-# debian-configuration-scripts
+# configure-debian
 
-Set of scripts for configuring of clear Debian installation
+Set of scripts for configuring of fresh installed Debian system
 
-## Configuration steps
+## Configuring steps
 
 0. In order to configure WiFi on the fresh installed system you need to run the following command on the already configured one:
 
