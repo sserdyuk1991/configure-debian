@@ -16,4 +16,6 @@ sudo apt -y install syncthing
 sudo apt -y install python-gi-cairo gir1.2-notify-0.7 gir1.2-rsvg-2.0 python-dateutil
 
 # Clone Syncthing-GTK
-sudo git clone https://github.com/syncthing/syncthing-gtk.git /opt/syncthing-gtk
+VERSION=v0.9.4.4
+sudo git clone -b $VERSION --single-branch https://github.com/syncthing/syncthing-gtk.git /opt/syncthing-gtk
+# TODO: consider using AppImage

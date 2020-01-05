@@ -11,14 +11,11 @@ sudo apt-get -y install cmake lua5.2 liblua5.2-dev lua-lgi libxcb-randr0-dev lib
 # Install optional dependencies
 sudo apt-get -y install libdbus-1-dev xserver-xephyr
 
+VERSION=v4.3
 cd /tmp
-git clone https://github.com/awesomeWM/awesome.git
+git clone -b $VERSION --single-branch https://github.com/awesomeWM/awesome.git
 
 cd awesome
-mkdir build
-cd build
-
-cmake ..
 make -j4
-
-sudo make install
+make package
+sudo dpkg -i awesome-*.deb
