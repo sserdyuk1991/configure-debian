@@ -8,7 +8,7 @@ if [ -z $1 ]; then
 fi
 USERNAME=$1
 
-BACKUP_DIR=../debian-backup-files/backup-files
+BACKUP_DIR=../gnulinux-backup/backup-files
 
 echo "Restoring 'sources.list' from backup..."
 cp --preserve=timestamps $BACKUP_DIR/etc/apt/sources.list /etc/apt

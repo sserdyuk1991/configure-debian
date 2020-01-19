@@ -1,6 +1,9 @@
-# configure-debian
+# gnulinux-post-install
 
-Set of scripts for configuring of fresh installed Debian system
+Set of script to automate setup of the newly installed GNU/Linux system.
+
+Current branch is related to Debian GNU/Linux distribution.
+If you are interested in another one please check available branches.
 
 ## Configuring steps
 
@@ -26,4 +29,4 @@ Set of scripts for configuring of fresh installed Debian system
     ./configure.sh
     ```
 
-NOTE: It's supposed that 'debian-backup-files' repository was previously cloned as well and was put beside this one
+NOTE: It's supposed that 'gnulinux-backup' repository was previously cloned as well and was put beside this one
