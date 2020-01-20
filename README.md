@@ -5,28 +5,32 @@ Set of script to automate setup of the newly installed GNU/Linux system.
 Current branch is related to Debian GNU/Linux distribution.
 If you are interested in another one please check available branches.
 
-## Configuring steps
+## Setup steps
 
-0. In order to configure WiFi on the fresh installed system you need to run the following command on the already configured one:
+0. Prior to setup Wi-Fi on the target system you need to make some preparation on the another GNU/Linux system which already has connection to Wi-Fi network:
 
-    ```bash
-    cd configure-wifi/ && ./prepare.sh
+    ```sh
+    cd scripts/setup-wifi/ && ./prepare.sh
     ```
 
-    The next steps should be performed on the target system.
+    The rest of the steps should be performed on the target system.
 
 1. Run the following two scripts as superuser:
 
-    ```bash
+    ```sh
     su
-    cd configure-wifi/ && ./configure-wifi.sh && cd ..
-    ./configure-sudo.sh <username>
+    cd scripts/setup-wifi/ && ./setup-wifi.sh
+    cd .. && ./setup-sudo.sh <username>
     ```
 
-2. After reboot run 'configure.sh' as normal user:
+2. After reboot run the following script as normal user to setup the rest:
 
-    ```bash
-    ./configure.sh
+    ```sh
+    ./setup.sh
     ```
 
-NOTE: It's supposed that 'gnulinux-backup' repository was previously cloned as well and was put beside this one
+3. Reboot when setup is complete:
+
+    ```sh
+    sudo reboot
+    ```

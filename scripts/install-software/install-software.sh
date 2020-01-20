@@ -11,8 +11,11 @@ sudo update-alternatives --set editor /usr/bin/vim.basic
 # Install Awesome WM
 ./install-awesome.sh
 
-# Install Spacemacs
-./install-spacemacs.sh
-
 # Install Syncthing
 ./install-syncthing.sh
+
+# Install Viber
+./install-viber.sh
+
+# Install VirtualBox
+# TODO
