@@ -11,6 +11,9 @@ sudo update-alternatives --set editor /usr/bin/vim.basic
 # Install Awesome WM
 ./install-awesome.sh
 
+# Install Atom
+./install-atom.sh
+
 # Install Syncthing
 ./install-syncthing.sh
 
